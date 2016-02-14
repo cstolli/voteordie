@@ -1,0 +1,14 @@
+<div class="image">
+  <img src="{{candidate.image}}"/>
+</div>
+{{#unless candidate.droppedOut}}
+<div class='vote' onClick={{action "voteFor"}}>
+  {{#if currentVote}}
+    &#10003;
+  {{/if}}
+</div>
+{{/unless}}
+<h3 class="ribbon">
+  <strong class="ribbon-content">{{candidate.name}}</strong>
+</h3>
+{{yield}}

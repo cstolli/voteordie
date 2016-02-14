@@ -1,0 +1,64 @@
+{
+   "votes":{
+      "1":{
+         "candidate":"bsanders",
+         "voter":"1",
+         "commitment":2
+      },
+      "2":{
+         "candidate":"tcruz",
+         "voter":"2",
+         "commitment":2
+      },
+      "3":{
+         "candidate":"hclinton",
+         "voter":"3",
+         "commitment":2
+      },
+      "4":{
+         "candidate":"dtrump",
+         "voter":"4",
+         "commitment":2
+      }
+   },
+   "candidates":{
+      "bsanders":{
+         "name":"Bernie Sanders",
+         "occupation":"Senator",
+         "party":"Democrat",
+         "bio":"blah blah blah"
+      },
+      "tcruz":{
+         "name":"Ted Cruz",
+         "occupation":"Senator",
+         "party":"Republican",
+         "bio":"blah blah"
+      },
+      "hclinton":{
+         "name":"Hillary Clinton",
+         "occupation":"Politician",
+         "party":"Democrat",
+         "bio":"blah blah blah"
+      },
+      "dtrump":{
+         "name":"Donald Trump",
+         "occupation":"Businessman",
+         "party":"Republican",
+         "bio":"blah blah blah"
+      }
+   },
+   "voters":{
+      "1":{
+
+      },
+      "2":{
+
+      },
+      "3":{
+
+      },
+      "4":{
+
+      }
+   }
+}

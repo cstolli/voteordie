@@ -1,0 +1,9 @@
+<div class="candidates">
+{{#each model.candidates as |candidate|}}
+  {{vote-card candidate=candidate voter=model.voter}}
+{{/each}}
+<h2>No Longer Running</h2>
+{{#each model.droppedCandidates as |candidate|}}
+  {{vote-card candidate=candidate voter=model.voter}}
+{{/each}}
+</div>

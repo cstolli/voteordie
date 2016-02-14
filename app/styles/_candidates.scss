@@ -1,0 +1,49 @@
+.head-shot {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 25px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin: 5px;
+    vertical-align: middle;
+    transition: height .2s ease, width .2s ease, border-radius .2s ease;    
+}
+
+.heads {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+}
+
+.head-shot img {
+    height: 50px;
+    transition: height .2s ease;
+}
+
+.head-shot.selected {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    img {
+      height: 80px;
+    }
+}
+
+.back-strip {
+    width: 100%;
+    height: 10px;
+    background: black;
+    border-radius: 5px;
+    position: absolute;
+    top: calc(50% - 5px);
+    z-index:0;
+    align-self:stretch;
+}
+
+.candidate-heads {
+  position: relative;
+}

@@ -1,0 +1,77 @@
+@import "voter-card";
+@import "vote-card-list";
+@import "candidates";
+
+body {
+  background: lightskyblue;
+  font-family: 'Roboto';
+  .login-form {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    top: 0;
+    left: 0;
+    .modal {
+      .form {
+        text-align: left;
+        input {
+          background: transparent;
+          border: none;
+          border-bottom: dashed 1px darkgrey;
+          margin: 0.25em 0 1.2em;
+          height: 30px;
+          font-size: 1em;
+        }
+      }
+      .greeting {
+        margin: 0 0 1em 0;
+      }
+      width: 300px;
+      height: 400px;
+      margin: 0 auto 0 auto;
+      top: calc(50% - 200px);
+      position: absolute;
+      left: calc(50% - 150px);
+      padding: 10px;
+      background: rgba(220, 220, 220, 0.9);
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+      text-align:center;
+      .or {
+        margin: 0.5em;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.4);
+        text-shadow: 2px 2px 0px lightgrey;
+        font-family: cursive;
+        font-size: 1.4em;
+      }
+      button {
+        cursor:pointer;        
+        border: none;
+        background-color: transparent;
+        margin: 0.5em;
+      }
+      button[type=submit] {
+        width: 100px;
+        height: 30px;
+        background: darkgrey;
+        color: white;
+      }
+      button.twitter {
+        background-image: url(../sign-in-with-twitter-gray.png);
+        height: 27px;
+        width: 158px;
+      }
+      button.facebook {
+        background-image: url(../sign-in-with-facebook.png);
+        height: 30px;
+        border-radius: 3px;
+        background-size: 160px 35px;
+        width: 155px;
+        background-position: 0px -2px;
+      }
+    }
+  }
+}

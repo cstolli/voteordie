@@ -4,6 +4,21 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'voteordie',
     environment: environment,
+    contentSecurityPolicy: { 
+      'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com",
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com" ,
+      'font-src': "'self' fonts.gstatic.com",
+      'img-src': "'self' 'unsafe-inline' data:"
+    },
+    firebase: 'https://voteordie.firebaseio.com/',
+    torii: {
+      sessionServiceName: 'session'
+    },
+    googleFonts: [
+      'Open+Sans:300',
+      'Roboto:300',
+      'Give+You+Glory:400'
+    ],
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

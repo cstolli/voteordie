@@ -1,0 +1,13 @@
+<div class='modal'>
+  <div class='greeting'>Ready to make your voice heard?  Sign in now with Twitter or Facebook</div>
+  <button class='twitter' {{action "signIn" "twitter"}}></button><br>
+  <button class='facebook' {{action "signIn" "facebook"}}></button><br>
+  <div class='or'>- or -</div>
+  <div class='form'>
+    <label for='email'>Email:<br>
+    <input type='email' id='email' maxlength="256" size="32" /> {{ email }} </label><br>
+    <label for='password'>Password:<br>
+    <input type='password' id='password'  maxlength="32" size="32" />{{password}}</label>
+    <button type='submit' value='sign up' {{action "signIn" "password"}}>Sign Up</button>
+  </div>
+</div>

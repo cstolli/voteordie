@@ -1,3 +1,15 @@
-<h2 id="title">Welcome to Ember</h2>
-
+<h2 id="title">Vote or Die</h2>
+<ul>
+  {{#link-to "index"}}Home{{/link-to}}
+  {{#link-to "candidates"}}Candidates{{/link-to}}
+  {{#link-to "issues"}}Issues{{/link-to}}
+  {{#link-to "about"}}About{{/link-to}}
+</ul>
+{{#if session.isAuthenticated}}
+  Logged in as {{session.currentUser.displayName}}
+  <button {{action "signOut"}}>Sign out</button>
+{{else}}
+  {{login-controls signIn=(action "signIn")}}
+{{/if}}
 {{outlet}}
+<p>&copy; 2016 voteordie.org.  All rights reserved.  <a href="mailto:chrispstoll@gmail.com">contact us</a></p>

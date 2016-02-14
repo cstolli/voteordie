@@ -1,0 +1,13 @@
+{{log 'Is admin?' isAdmin}}
+{{#if isAdmin}}
+  <ul>
+    <li>{{#link-to "admin.candidates"}}Candidates{{/link-to}}</li>
+    {{#each model as |page|}}
+    <li>{{#link-to "admin.page" page}}About{{/link-to}}</li>
+    {{/each}}
+  </ul>
+  {{outlet}}
+{{else}}
+  Admin required
+  
+{{/if}}
